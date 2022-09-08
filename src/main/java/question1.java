@@ -95,7 +95,7 @@ return false;
 
 
 
-    public static void main(String[] args) { String element = ("d");
+    public static void main(String[] args) { String element = "d";
 
         String [] names = {"a", "b", "c"};
         int [] ints = {1, 2, 3};
