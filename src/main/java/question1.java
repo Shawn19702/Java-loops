@@ -109,8 +109,8 @@ return false;
         System.out.println(getAverage(ints));
         System.out.println(extractAllOddNumbers(numbers));
         System.out.println(extractAllEvenNumbers(numbers));
-        System.out.println(contains(new String[]{element}, "d"));
-        System.out.println(contains(new String[]{element}, "f"));
+        System.out.println(contains(names , element));
+
 
 
 
