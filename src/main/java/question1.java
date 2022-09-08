@@ -9,37 +9,32 @@ public class question1 {
     }
 
     public static String getFirstElement(String[] names) {
-        String[] letters = {"a", "b", "c"};
-        return (letters[0]);
+        return (names[0]);
     }
 
     public static String getLastElement(String[] names) {
-        String[] letters = {"a", "b", "c"};
-        return (letters[2]);
+        return (names[2]);
     }
 
     public static String getSecondToLastElement(String[] names) {
-        String[] letters = {"a", "b", "c"};
-        return (letters[1]);
+        return (names[1]);
 
     }
 
     public static int getSum(int[] ints) {
-        int[] arr = {1, 2, 3};
         int sum = 0;
         int i;
-        for (i = 0; i < arr.length; i++)
-            sum += arr[i];
+        for (i = 0; i < ints.length; i++)
+            sum += ints[i];
         return sum;
 
     }
 
     public static int getAverage(int[] ints) {
-        int[] arr = {1, 2, 3};
-        int length = arr.length;
+        int length = ints.length;
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+        for (int i = 0; i < ints.length;i++) {
+            sum += ints[i];
 
 
         }
@@ -49,28 +44,35 @@ public class question1 {
 
     }
 
-    public static int extractAllOddNumbers(int[] numbers) {
+    public static String extractAllOddNumbers(int[] numbers) {
 
-int i;
-        for (i=0; i < numbers.length -1; i++){
-            if (numbers[i] % 2!= 0) {
-System.out.print(numbers[i] + " ");
+int number =0;
+int position =0;
+String oddNumbers = " ";
+while (position < numbers.length) {
+number = numbers[position];
+position++;
+if (number % 2 !=0) { oddNumbers = oddNumbers + number + ", ";
+    }
 
+}
+  return oddNumbers;
+}
 
+    public static String extractAllEvenNumbers(int[] numbers) {
 
+        int number =0;
+        int position =0;
+        String evenNumbers = " ";
+        while (position < numbers.length) {
+            number = numbers[position];
+            position++;
+            if (number % 2 ==0) { evenNumbers = evenNumbers + number + ", ";
             }
-    }        return numbers[i];
 
+        }
+        return evenNumbers;
     }
-    public static int extractAllEvenNumbers(int[] numbers) {
-    int i;
-for (i=0; i < numbers.length - 1; i++){
-if ( numbers[i] % 2==0){System.out.print(numbers[i] + " ");
-}
-
-    }
-        return numbers[i];
-}
 
 public static boolean contains(String[] names, String element) {
     boolean x = false; boolean y = true;
@@ -95,6 +97,7 @@ public static boolean contains(String[] names, String element) {
 
 
     public static void main(String[] args) { String element = ("d");
+
         String [] names = {"a", "b", "c"};
         int [] ints = {1, 2, 3};
         int [] numbers = {3, 5,7, 6, 8,10};
