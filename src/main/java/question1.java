@@ -75,14 +75,13 @@ if (number % 2 !=0) { oddNumbers = oddNumbers + number + ", ";
     }
 
 public static boolean contains(String[] names, String element) {
-    boolean x = false; boolean y = true;
-    if ( names.equals(element)){
-        return y;
-    }else {
-        return x; }
+    for (String n : names) {
+        if (element == n){
+    return true;
+         }
 }
-
-
+return false;
+}
 
 
 
@@ -119,11 +118,6 @@ public static boolean contains(String[] names, String element) {
 
     }
 }
-
-
-
-
-
 
 
 
